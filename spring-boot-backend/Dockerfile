@@ -17,7 +17,7 @@ WORKDIR /home/to-do-app/
 COPY --from=build /home/to-do-app/target/todoapp-0.0.1-SNAPSHOT.jar /home/to-do-app/todoapp.jar
 
 # Expose the application port
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the Spring Boot application
 CMD ["java", "-jar", "todoapp.jar"]
